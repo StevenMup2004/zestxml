@@ -25,7 +25,7 @@ def _filter(score_mat, filter_mat, copy=True):
 
 dataset = sys.argv[1]
 dataset_path = sys.argv[2]
-RES_DIR = f'{dataset_path}/Results/{dataset}'
+RES_DIR = "/kaggle/working/Results/topic_recommendation" 
 # DATA_DIR = f'GZXML-Datasets/{dataset}'
 DATA_DIR = f'{dataset_path}'
 
