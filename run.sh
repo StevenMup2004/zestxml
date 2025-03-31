@@ -1,18 +1,19 @@
 dataset_path=$1
 type=$2
-# extra_args="${@:3}"
 dataset=$3
 extra_args="${@:4}"
-#DATA_DIR=GZXML-Datasets/${dataset}
-DATA_DIR=${dataset_path}
-RES_DIR=${dataset_path}/Results/${dataset}
-MODEL_DIR=${dataset_path}/Results/${dataset}/model
-logfile=${dataset_path}/${RES_DIR}/log.txt
 
+# Đổi DATA_DIR thành thư mục làm việc
+DATA_DIR=${dataset_path}
+RES_DIR="/kaggle/working/Results/${dataset}"  # Chuyển về thư mục có quyền ghi
+MODEL_DIR="${RES_DIR}/model"
+logfile="${RES_DIR}/log.txt"
+
+# Tạo thư mục nếu chưa có
 mkdir -p ${RES_DIR}
 mkdir -p ${MODEL_DIR}
 
-# set -x
+# Chạy lệnh với thư mục mới
 /usr/bin/time -f "\nReal time : %E\nMax RAM : %M KB\nPercent CPU : %P" \
 ./run 	-trn_X_Xf ${DATA_DIR}/trn_X_Xf.txt \
 		-tst_X_Xf ${DATA_DIR}/tst_X_Xf.txt \
