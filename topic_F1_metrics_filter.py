@@ -121,7 +121,7 @@ total_labels = 0
 prediction_not_seen = {}
 prediction_not_seen_correct = {}
 
-threshold = [5]#,10,20,30,40,50,60,70,80,90,100]
+threshold = [10]#,10,20,30,40,50,60,70,80,90,100]
 for thres in threshold:
     f_unrep = open("fix_new_id_repo_unrepresentative_"+str(thres)+"_test.txt")
     list_of_unrep = f_unrep.read().splitlines()
