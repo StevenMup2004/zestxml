@@ -83,6 +83,8 @@ for text in text_labels:
     if iter2 in fin_dict:
         if fin_dict[iter2] != len(list_labels):
             num_of_wrong += 1
+            print(iter2)
+            print("ERROR")
     iter2 += 1
 print(num_of_wrong)
 sum_sr_1 = 0
