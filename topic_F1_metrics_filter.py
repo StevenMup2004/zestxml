@@ -61,7 +61,7 @@ with open(f'{DATA_DIR}/tst_X_Y.txt', "r", encoding="utf-8") as re:
 actuals = []
 iter2= 0
 
-f_unrep = open("fix_new_id_repo_unrepresentative_head_test.txt")
+f_unrep = open("fix_new_id_repo_unrepresentative_mid_test.txt")
 list_of_unrep = f_unrep.read().splitlines()
 fin_dict = {}
 for line in list_of_unrep:
@@ -123,7 +123,7 @@ total_labels = 0
 prediction_not_seen = {}
 prediction_not_seen_correct = {}
 
-threshold = ["head"]
+threshold = ["mid"]
 for thres in threshold:
     f_unrep = open("fix_new_id_repo_unrepresentative_"+str(thres)+"_test.txt")
     list_of_unrep = f_unrep.read().splitlines()
