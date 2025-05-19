@@ -248,7 +248,7 @@ void predict(VecF& bilinear_clf, SMatF* tst_X_Y, SMatF* trn_X_Y, SMatF* tst_X_Xf
 	int numx = tst_X_Xf->nc;
 	int numy = Y_Yf->nc;
 
-	SMatF* shortlist = get_approx_shortlist(trn_X_Y, tst_X_Xf, Y_Yf, sparsity_pattern, params);
+	SMatF* shortlist = new SMatF("/kaggle/input/final-data-json/shortlist.bin");
 	LOGN("[STAT] nnz of shortlist    : " << shortlist->get_nnz());
 	LOGN("[STAT] recall of shortlist : " << shortlist->get_recall(tst_X_Y) << "%");
 	shortlist->dump(params.get<string>("res_dir") + OS_SEP + "shortlist.bin");
