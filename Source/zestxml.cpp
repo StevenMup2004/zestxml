@@ -247,7 +247,7 @@ void predict(VecF& bilinear_clf, SMatF* tst_X_Y, SMatF* trn_X_Y, SMatF* tst_X_Xf
 	int num_thread = params.get<int>("num_thread");
 	int numx = tst_X_Xf->nc;
 	int numy = Y_Yf->nc;
-        print("Fixed_new");
+        printf("Fixed_new");
 	SMatF* shortlist = new SMatF("/kaggle/input/dataset/shortlist_new.bin");
 	LOGN("[STAT] nnz of shortlist    : " << shortlist->get_nnz());
 	LOGN("[STAT] recall of shortlist : " << shortlist->get_recall(tst_X_Y) << "%");
