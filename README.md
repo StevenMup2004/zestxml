@@ -17,10 +17,13 @@ This repository contains experiments Strategy 2 for evaluating defense mechanism
 │       ├── CodeLlama/
 │       └── Gemini/
 │
+├── Evaluation/                   # Evaluation code for SR
+│
 ├── VulnerabilitySummaryModule/
 │   ├── Finetune/                   # Fine-tuning a vulnerability summarizer
 │   └── Inference/                  # Inference-time generation of summaries
 ```
+
 
 ---
 
@@ -32,7 +35,7 @@ Each scenario simulates a different type of poisoning:
 
 - **Scenario 1** – *Targeted Poisoning*: malicious code is inserted that closely matches the query intent to fool retrieval + generation.
 - **Scenario 2** – *Untargeted Poisoning*: general-purpose vulnerable code is injected to stealthily degrade generation quality.
-
+- **Evaluation** – Contains scripts to compute: **Secure Rate (SR)**
 Supported base LLMs:
 - `CodeLlama`
 - `Gemini`
@@ -51,5 +54,7 @@ Helps reduce generation of unsafe code when used as a gating or prompt-enhanceme
 - `Inference/`: inference scripts for generating summaries.
 
 ---
+
+
 
 
