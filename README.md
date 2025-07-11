@@ -33,8 +33,6 @@ This repository contains experiments Strategy 2 for evaluating defense mechanism
 
 - **Scenario 1** – *Targeted Poisoning*: malicious code is inserted that closely matches the query intent to fool retrieval + generation.
 - **Scenario 2** – *Untargeted Poisoning*: general-purpose vulnerable code is injected to stealthily degrade generation quality.
-- **Evaluation** – Contains scripts to compute: **Secure Rate (SR)**
-- Supported base LLMs: `CodeLlama` and `Gemini`
 
 ---
 
@@ -50,6 +48,10 @@ Helps reduce generation of unsafe code when used as a gating or prompt-enhanceme
 - `Inference/`: inference scripts for generating summaries.
 
 ---
+### 📊 Evaluation
+
+Contains code to compute:
+- **Secure Rate (SR)**: Based on static analyzer output
 
 
 
