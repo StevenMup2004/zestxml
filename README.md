@@ -1,7 +1,7 @@
 
-# 🔬 Secure RACG Experiments
+# 🔬  RAGGuard - Strategy 2
 
-This repository contains experiments for evaluating defense mechanisms against **poisoning attacks** in Retrieval-Augmented Code Generation (RACG) systems using **CodeLlama** and **Gemini** models.
+This repository contains experiments Strategy 2 for evaluating defense mechanisms against **poisoning attacks** in RACG systems using **CodeLlama** and **Gemini** models.
 
 ---
 
