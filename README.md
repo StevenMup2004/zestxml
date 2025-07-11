@@ -31,14 +31,10 @@ This repository contains experiments Strategy 2 for evaluating defense mechanism
 
 ### 🧪 Experiment
 
-Each scenario simulates a different type of poisoning:
-
 - **Scenario 1** – *Targeted Poisoning*: malicious code is inserted that closely matches the query intent to fool retrieval + generation.
 - **Scenario 2** – *Untargeted Poisoning*: general-purpose vulnerable code is injected to stealthily degrade generation quality.
 - **Evaluation** – Contains scripts to compute: **Secure Rate (SR)**
-Supported base LLMs:
-- `CodeLlama`
-- `Gemini`
+- Supported base LLMs: `CodeLlama` and `Gemini`
 
 ---
 
