@@ -6,7 +6,7 @@ This repository contains experiments for evaluating defense mechanisms against *
 
 ## 📁 Project Structure
 
-.
+
 ├── Experiment/
 │ ├── Scenario1/ # Targeted poisoning: query-aligned injection
 │ │ ├── CodeLlama/
